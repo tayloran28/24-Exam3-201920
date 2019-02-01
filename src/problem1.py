@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Alyssa Taylor.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -125,6 +125,13 @@ def problem1(n):
       :type n: int
       :rtype: int
     """
+
+    total = 0
+    for k in range(1, n):
+        if fibonacci(k) < n:
+            total = fibonacci(k)
+    return total
+
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
